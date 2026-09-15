@@ -1,0 +1,34 @@
+# BEACON — Entornos conda para reproducibilidad
+#
+# Este archivo documenta los dos entornos necesarios. Dado que BepiPred-3.0
+# y DiscoTope-3.0 tienen dependencias incompatibles, se instalan en entornos
+# separados (ver README para las instrucciones completas).
+#
+# Este archivo describe el entorno base común. Los entornos específicos de
+# cada predictor se crean siguiendo las instrucciones del README.
+
+name: beacon
+channels:
+  - conda-forge
+  - bioconda
+  - pytorch
+dependencies:
+  - python=3.10
+  - biopython>=1.79
+  - pandas>=1.5
+  - numpy>=1.23
+  - scikit-learn>=1.1
+  - matplotlib>=3.5
+  - pyyaml>=6.0
+  - pip
+  - pip:
+      - fair-esm
+
+# ---------------------------------------------------------------------------
+# Entornos adicionales (crear por separado según el README):
+#
+#   bepipred3  → python=3.10, pytorch (cpuonly), fair-esm, biopython
+#   discotope3 → python=3.11, requirements propios de DiscoTope-3.0
+#
+# ElliPro requiere Java (openjdk-17-jre-headless), no Python.
+# ---------------------------------------------------------------------------

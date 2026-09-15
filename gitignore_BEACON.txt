@@ -1,0 +1,46 @@
+# ==========================================================================
+# BEACON — .gitignore
+# ==========================================================================
+# Reemplaza el contenido del archivo .gitignore de tu repositorio con esto.
+# (En GitHub: abre el archivo .gitignore → editar (lápiz) → pega esto → commit)
+
+# --- Predictores externos (se descargan según el README, no se versionan) ---
+tools/BepiPred-3.0/
+tools/DiscoTope-3.0/
+tools/ElliPro.jar
+tools/*.jar
+
+# --- Estructuras PDB crudas (se descargan del RCSB automáticamente) ---
+data/*.pdb
+data/*.cif
+
+# --- Modelos de lenguaje y pesos (se descargan la primera vez) ---
+*.pt
+*.pth
+*.pkl
+**/BP3Models/
+**/models/XGB_*.json
+
+# --- Archivos temporales de Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- Entornos virtuales ---
+envs/
+venv/
+.venv/
+
+# --- Archivos comprimidos ya extraídos ---
+*.zip
+
+# --- Logs ---
+logs/*.log
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Sesiones PyMOL (pesadas; opcional versionar) ---
+# pymol/*.pse

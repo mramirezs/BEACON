@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "Si utilizas BEACON en tu investigación, por favor cita este trabajo."
+title: "BEACON: B-cell Epitope Analysis with CONsensus"
+abstract: >-
+  Pipeline bioinformático para la predicción de epítopes de células B mediante
+  consenso por voto mayoritario de tres predictores complementarios
+  (BepiPred-3.0, ElliPro y DiscoTope-3.0), con validación contra datos
+  experimentales del IEDB.
+type: software
+authors:
+  - family-names: "Ramírez Sáenz"
+    given-names: "Manuel Alain"
+    affiliation: "Universidad Internacional de Valencia (VIU)"
+date-released: 2025
+license: MIT
+keywords:
+  - inmunoinformática
+  - epítopes de células B
+  - predicción por consenso
+  - BepiPred-3.0
+  - DiscoTope-3.0
+  - ElliPro
+  - vacunas computacionales
+references:
+  - type: article
+    title: "BepiPred-3.0: Improved B-cell epitope prediction using protein language models"
+    authors:
+      - family-names: "Clifford"
+        given-names: "Joakim N."
+    year: 2022
+    journal: "Protein Science"
+    volume: 31
+    issue: 12
+    doi: "10.1002/pro.4497"
+  - type: article
+    title: "DiscoTope-3.0: Improved B-cell epitope prediction using inverse folding latent representations"
+    authors:
+      - family-names: "Høie"
+        given-names: "Magnus H."
+    year: 2024
+    journal: "Frontiers in Immunology"
+    volume: 15
+    doi: "10.3389/fimmu.2024.1322712"
